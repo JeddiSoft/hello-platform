@@ -1,11 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
   name: hello-platform
   namespace: hello-prod
-  labels:
-    app: hello-platform
 
 spec:
   replicas: 3
@@ -21,31 +18,26 @@ spec:
 
     spec:
       containers:
-      - name: hello-platform
-        image: hello-platform:1.0.0
-        imagePullPolicy: IfNotPresent
+        - name: hello-platform
+          image: ghcr.io/ajezziriglos-bot/hello-platform:PLACEHOLDER
 
-        ports:
-          - containerPort: 8000
+          ports:
+            - containerPort: 8000
 
-        resources:
-          requests:
-            cpu: "100m"
-            memory: "128Mi"
-          limits:
-            cpu: "500m"
-            memory: "256Mi"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
 
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 8000
-          initialDelaySeconds: 2
-          periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
 
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8000
-          initialDelaySeconds: 5
-          periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000

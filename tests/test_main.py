@@ -16,7 +16,7 @@ def test_hello():
 
     assert data["application"] == "hello-platform"
     assert data["version"] == "1.0.0"
-    assert data["message"] == "Hello from Platform Lab!"
+    assert data["message"] == "Hello from GitOps!"
 
 
 def test_health():

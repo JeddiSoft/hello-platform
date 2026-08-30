@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: hello-platform
-        image: ghcr.io/ajezziriglos-bot/hello-platform:e077c09746821ee665489f279a453a1a9bc55394
+        image: ghcr.io/ajezziriglos-bot/hello-platform:47b241cc6eb89f3a0f882c2fb9c0c56e3cda54ca
         imagePullPolicy: IfNotPresent
 
         ports:

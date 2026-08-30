@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: hello-platform
-          image: ghcr.io/ajezziriglos-bot/hello-platform:3e3d342a257857907f49b8a1826025ac85c564f0
+          image: ghcr.io/ajezziriglos-bot/hello-platform:d83dc44597ff80db6546a2dc2fc07beb96c70ed9
 
           ports:
             - containerPort: 8000

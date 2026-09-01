@@ -7,6 +7,10 @@ on:
     paths-ignore:
       - "k8s/dev/deployment.yaml"
 
+  pull_request:
+    branches:
+      - main    
+
 jobs:
 
   platform-ci:

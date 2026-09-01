@@ -20,9 +20,9 @@ jobs:
       packages: write
 
   update-manifest:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs: platform-ci
-
     permissions:
       contents: write
 

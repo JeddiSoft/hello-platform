@@ -1,1 +1,2 @@
-.github/workflows/* @ajezziriglos-bot
+/.github/CODEOWNERS @ajezziriglos-bot
+/.github/workflows/* @ajezziriglos-bot

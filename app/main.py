@@ -11,7 +11,7 @@ def hello():
     return {
         "application": "hello-platform",
         "version": "1.0.0",
-        "message": "Hello from GitOps"
+        "message": "Hello from GitOps1"
     }
 
 

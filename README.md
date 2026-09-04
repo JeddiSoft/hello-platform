@@ -1,7 +1,6 @@
 # hello-platform
 
 
-
 Aplicacion FastAPI de ejemplo para un flujo de despliegue con Docker y
 Kubernetes. El servicio responde con informacion de la aplicacion y expone un
 endpoint de salud para los probes del cluster.

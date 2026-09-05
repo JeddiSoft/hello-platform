@@ -1,0 +1,7 @@
+# Platform governance
+/.github/CODEOWNERS          @JeddiSoft/platform-team
+/.github/workflows/*         @JeddiSoft/platform-team
+
+# GitOps desired state
+/k8s/dev/*                   @JeddiSoft/platform-team
+/k8s/prod/*                  @JeddiSoft/platform-team

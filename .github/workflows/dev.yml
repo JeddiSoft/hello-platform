@@ -3,7 +3,7 @@ name: DEV Delivery
 on:
   push:
     branches:
-      - "feature/github-actions-dev"
+      - develop
     paths-ignore:
       - "k8s/dev/deployment.yaml"
 
@@ -13,4 +13,3 @@ jobs:
     permissions:
       contents: write
       packages: write
-      

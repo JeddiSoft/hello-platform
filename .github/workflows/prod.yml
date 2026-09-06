@@ -1,0 +1,16 @@
+name: PROD Promotion
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "k8s/prod/deployment.yaml"
+
+jobs:
+  prod-promotion:
+    uses: JeddiSoft/platform-workflows/.github/workflows/prod-promotion.yml@main
+    secrets: inherit
+    permissions:
+      contents: write
+      packages: read

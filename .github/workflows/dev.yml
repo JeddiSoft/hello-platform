@@ -1,4 +1,4 @@
-name: DEV Delivery
+name: dev Delivery
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   dev-delivery:
-    uses: JeddiSoft/platform-workflows/.github/workflows/delivery-dev.yml@main
+    uses: JeddiSoft/platform-workflows/.github/workflows/dev-delivery.yml@main
     permissions:
       contents: write
       packages: write

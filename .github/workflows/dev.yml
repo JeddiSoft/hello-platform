@@ -1,4 +1,4 @@
-name: DEV Delivery
+name: dev Delivery
 
 on:
   push:

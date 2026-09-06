@@ -3,14 +3,14 @@ name: DEV Delivery
 on:
   push:
     branches:
-      - "feature/github-actions-dev"
+      - develop
     paths-ignore:
       - "k8s/dev/deployment.yaml"
 
 jobs:
   dev-delivery:
-    uses: JeddiSoft/platform-workflows/.github/workflows/python-kubernetes-dev.yml@main
+    uses: JeddiSoft/platform-workflows/.github/workflows/delivery-dev.yml@main
     permissions:
       contents: write
       packages: write
-      
+    secrets: inherit

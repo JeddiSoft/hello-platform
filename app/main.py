@@ -11,11 +11,8 @@ def hello():
     return {
         "application": "hello-platform",
         "version": "1.0.0",
-        "message": "Hello from GitOps1"
+        "message": "Hello from GitOps end to end"
     }
-
-
-
 
 
 @app.get("/health")
